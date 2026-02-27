@@ -1,0 +1,33 @@
+{
+  "name": "java-style-kv-formatter",
+  "displayName": "Java Style KV Formatter",
+  "description": "Formats Java-style toString() key-value output with proper indentation",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "javaStyleKvFormatter.formatSelection",
+        "title": "Format Java-Style KV"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "node ./out/formatter.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0"
+  }
+}

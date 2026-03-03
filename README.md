@@ -1,5 +1,35 @@
 # java_style_kv_formatter
 
+## Installation
+
+1. Clone the repo and install dependencies:
+   ```bash
+   git clone git@github.com:dingpl716/java_style_kv_formatter.git
+   cd java_style_kv_formatter
+   make install
+   ```
+2. Install the extension into your editor:
+   ```bash
+   # For Cursor
+   make install-cursor
+
+   # For VS Code
+   make install-code
+   ```
+3. Reload the editor window (Cmd+Shift+P > "Developer: Reload Window").
+
+## Available Make Targets
+
+| Target | Description |
+|--------|-------------|
+| `make install` | Install npm dependencies |
+| `make compile` | Compile TypeScript |
+| `make package` | Compile and package as `.vsix` |
+| `make test` | Compile and run tests |
+| `make install-cursor` | Package and install into Cursor |
+| `make install-code` | Package and install into VS Code |
+| `make clean` | Remove `out/`, `node_modules/`, and `.vsix` |
+
 ## How to run
 - Open command palette
 - Find and run "Format Java-Style KV"
